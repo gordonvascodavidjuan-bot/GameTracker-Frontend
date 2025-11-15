@@ -277,7 +277,7 @@ function App() {
             <StarRating puntuacion={puntuacion} setPuntuacion={setPuntuacion} />
             <input
               type="text"
-              placeholder="URL de imagen"
+              placeholder="URL de imagen para agregar"
               value={imagen}
               onChange={(e) => setImagen(e.target.value)}
             />
