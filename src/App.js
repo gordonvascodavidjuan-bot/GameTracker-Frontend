@@ -290,7 +290,7 @@ function App() {
               ¿Completado?
             </label>
             <textarea
-              placeholder="Escribe una reseña del juego..."
+              placeholder="Escribe una reseña del juego...."
               value={reseña}
               onChange={(e) => setReseña(e.target.value)}
               rows={3}
