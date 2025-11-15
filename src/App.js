@@ -241,7 +241,7 @@ function App() {
       {!mostrarFormulario && !mostrarBiblioteca && !mostrarResenas && !mostrarEstadisticas && (
         <div className="bienvenida">
           <h1>🎮 Biblioteca de Juegos</h1>
-          <p>Bienvenido a tu gestor de juegos.</p>
+          <p>Bienvenido a tu gestor de juegos. .</p>
           <img src="/bienbenido.jpg" alt="Bienvenida" className="imagen-bienvenida" />
         </div>
       )}
