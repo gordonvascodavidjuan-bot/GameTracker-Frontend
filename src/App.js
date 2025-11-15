@@ -354,7 +354,7 @@ function App() {
       {/* RESEÑAS */}
       {mostrarResenas && (
         <div className="container">
-          <h1>📝 Reseñas de Juegos</h1>
+          <h1>📝 Reseñas de Juegos.</h1>
           {reseñas.length === 0 ? (
             <p>No hay reseñas aún.</p>
           ) : (
