@@ -1,0 +1,262 @@
+/* ======== GLOBAL ======== */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1f2f, #12131f);
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  animation: fondoAnim 20s ease-in-out infinite;
+}
+
+/* ======== ANIMACIÓN DE FONDO ======== */
+@keyframes fondoAnim {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  width: 100%;
+  background: #12131f;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #2f3042;
+}
+
+.navbar button {
+  background: #2c2e44;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.navbar button:hover {
+  background: #4c60ff;
+}
+
+/* ======== BIENVENIDA ======== */
+.bienvenida {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.bienvenida h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #84a0ff;
+}
+
+.bienvenida p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.imagen-bienvenida {
+  max-width: 450px;
+  width: 80%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.imagen-bienvenida:hover {
+  transform: scale(1.05);
+}
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+/* ======== FORMULARIO ======== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #24253a;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  background: #2c2e44;
+  color: white;
+}
+
+.formulario label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.formulario button {
+  background: #4c60ff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.formulario button:hover {
+  background: #657bff;
+}
+
+.cancelar {
+  background: #ff4c4c !important;
+}
+
+/* ======== BUSCADOR ======== */
+.buscador {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background: #2c2e44;
+  color: white;
+}
+
+/* ======== LISTA DE CARDS ======== */
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* ======== CARD DEL JUEGO ======== */
+.card {
+  background: #28293d;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #9bb3ff;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.editar {
+  background: #4c60ff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.eliminar {
+  background: #ff4c4c;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ======== ESTRELLAS ======== */
+.estrellas {
+  display: flex;
+  gap: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.estrellas span {
+  transition: transform 0.2s;
+}
+
+.estrellas span:hover {
+  transform: scale(1.2);
+}
+
+.star {
+  color: gray;
+  transition: 0.2s;
+}
+
+.star.filled {
+  color: gold;
+}
+
+/* ======== RESEÑAS ======== */
+.reseña {
+  margin-bottom: 15px;
+  background: #2c2e44;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ======== ESTADÍSTICAS ======== */
+.container p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lista {
+    grid-template-columns: 1fr;
+  }
+
+  .bienvenida h1 {
+    font-size: 35px;
+  }
+
+  .bienvenida p {
+    font-size: 16px;
+  }
+}
