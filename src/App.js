@@ -356,7 +356,7 @@ function App() {
         <div className="container">
           <h1>📝 Reseñas de Juegos.</h1>
           {reseñas.length === 0 ? (
-            <p>No hay reseñas aún.</p>
+            <p>No  se encuantran  reseñas aún.</p>
           ) : (
             reseñas.map((r) => (
               <div key={r._id} className="card reseña">
